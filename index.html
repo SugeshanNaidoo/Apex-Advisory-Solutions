@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Advisory Solutions - Business Restructuring Experts | South Africa</title>
+    <meta name="description" content="Leading business restructuring and advisory services in South Africa. Expert guidance in corporate governance, financial advisory, and business transformation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo" onclick="showPage('home')">
+				            <div class="logo-container">
+                <img src="imgs/logo.png" alt="Apex Logo" class="logo-image">
+            </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('services')">Services</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="#" class="cta-btn" onclick="showPage('booking')">Book Consultation</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Business<br><span class="accent-text">With Expert Guidance</span></h1>
+                <p>Leading business restructuring and advisory services in South Africa. We help organizations navigate complex challenges and achieve sustainable growth.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" onclick="showPage('booking')">
+                        <i class="fas fa-calendar-check"></i> Book Consultation
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="showPage('services')">
+                        <i class="fas fa-arrow-right"></i> Our Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="services-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive business restructuring and advisory services tailored for South African companies</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Strategic Advisory</h3>
+                        <p>Long-term strategic planning, business restructuring, and transformation support to drive sustainable growth.</p>
+                        <a href="#" onclick="showPage('services')">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Legal & Governance</h3>
+                        <p>Expert legal counsel, corporate governance, and regulatory compliance to protect your business and ensure adherence to South African law.</p>
+                        <a href="#" onclick="showPage('services')">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Financial Services</h3>
+                        <p>Strategic financial management from daily bookkeeping to complex tax planning and debt restructuring solutions.</p>
+                        <a href="#" onclick="showPage('services')">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Schedule a confidential consultation with our experts today</p>
+                <a href="#" class="btn btn-primary" onclick="showPage('booking')">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="hero" style="height: 60vh;">
+            <div class="hero-content">
+                <h1>About <span class="accent-text">Apex Advisory</span></h1>
+                <p>Leading business transformation experts with deep roots in South Africa</p>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Story</h2>
+                    <p>Excellence in business restructuring since our inception</p>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+                    <div>
+                        <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem;">Business Restructuring in South Africa</h3>
+                        <p style="margin-bottom: 1.5rem; color: var(--text-light); line-height: 1.8;">Apex Advisory Solutions is an emerging professional services firm dedicated to guiding South African businesses through the complexities of financial restructuring, regulatory compliance, and strategic growth. As a newly established advisory, we combine legal precision with financial acumen to help clients build stronger, more resilient enterprises in an evolving economic landscape. Our approach is rooted in collaboration, innovation, and a deep understanding of both the regulatory and commercial environments that shape modern business in South Africa.</p>
+                        
+                        <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem; margin-top: 2rem;">Our South African Expertise</h3>
+                        <p style="color: var(--text-light); line-height: 1.8;">Founded by Avathar Soni Naidoo and Ashendran Naidoo, Apex Advisory Solutions brings together a powerful blend of legal and financial expertise. With Avathar’s extensive background as an admitted attorney of the High Court and Ashendran’s credentials as a Chartered Business Accountant and Tax Practitioner, the firm offers clients a comprehensive and trusted advisory experience. Supported by a network of strategic partners. Apex Advisory Solutions is positioned to deliver holistic, integrated solutions that empower businesses to adapt, thrive, and lead in a competitive marketplace.</p>
+                        
+                        <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+                            <div style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">
+                                <i class="fas fa-check-circle"></i> SAICA Registered
+                            </div>
+                            <div style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">
+                                <i class="fas fa-check-circle"></i> SARB Compliant
+                            </div>
+                            <div style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">
+                                <i class="fas fa-check-circle"></i> JSE Approved
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Business professionals" style="width: 100%; border-radius: 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.15);">
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 6rem;">
+                    <h2>Our Founders</h2>
+                    <p>Visionary leaders driving business transformation across South Africa</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+                    <div class="service-card" style="text-align: center;">
+                        <img src="imgs/avathar.png" alt="Avathar Soni Naidoo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Avathar Soni Naidoo</h3>
+                        <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;">Co-Founder & Director</p>
+                        <p style="font-size: 0.9rem; font-style: italic; color: var(--text-light); margin-bottom: 1.5rem;">Admitted Attorney Of The High Court Of South Africa</p>
+                        <p style="text-align: left; line-height: 1.8; margin-bottom: 1.5rem;">Avathar was admitted as an attorney of the High Court and brings extensive expertise across a range of legal disciplines. His background includes civil litigation, legal consulting, and the management of high-volume legal operations. He has also supported tech-driven startups and advised SMEs navigating compliance in an increasingly digitized business landscape. Avathar is recognized for combining strong technical legal knowledge with a practical, solutions-oriented approach. He is committed to delivering client-focused counsel that fosters resilience and long-term success.</p>
+                    </div>
+
+                    <div class="service-card" style="text-align: center;">
+                        <img src="imgs/ashen.png" alt="Ashendran Naidoo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Ashendran Naidoo</h3>
+                        <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;">Co-Founder & Director</p>
+                        <p style="font-size: 0.9rem; font-style: italic; color: var(--text-light); margin-bottom: 1.5rem;">CBA(SA), AT(SA), TP(SA), Commissioner of Oaths(RSA)</p>
+                        <p style="text-align: left; line-height: 1.8; margin-bottom: 1.5rem;">Ashendran is a Chartered Business Accountant with CIBA, a registered Tax Practitioner with SAIT, and affiliated with SAICA. With deep expertise in accounting and taxation, he has helped individuals and businesses achieve financial clarity and sustainable growth. Known for delivering precise and client-focused solutions, Ashendran blends technical proficiency with a strong sense of professionalism and service excellence. His work reflects a commitment to supporting clients in building robust financial strategies for continued success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		        <!-- Logo Carousel -->
+				                <div class="section-header" style="margin-top: 6rem;">
+                    <h2>Our Trusted Partners</h2>
+                    <p>Trusted Collaborators Driving Sustainable Growth And Innovation</p>
+                </div>
+                <div class="logos">
+				<div class="logo_items">
+				<img src="partners/fnb.jpg">
+				<img src="partners/genfin.png">
+				<img src="partners/nosh.png">
+				<img src="partners/skms.png">
+				<img src="partners/cyberlex.png">
+				<img src="partners/alba.png">
+				<img src="partners/ananth.png">
+				<img src="partners/alba green.png">
+				</div>
+				
+				<div class="logo_items">
+				<img src="partners/fnb.jpg">
+				<img src="partners/genfin.png">
+				<img src="partners/nosh.png">
+				<img src="partners/skms.png">
+				<img src="partners/cyberlex.png">
+				<img src="partners/alba.png">
+				<img src="partners/ananth.png">
+				<img src="partners/alba green.png">
+				</div>
+				</div>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Work With Us?</h2>
+                <p>Let's discuss how we can help transform your business</p>
+                <a href="#" class="btn btn-primary" onclick="showPage('contact')">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </section>
+    </div>
+
+<!-- Services Page -->
+<div id="services" class="page">
+    <section class="hero" style="height: 60vh;">
+        <div class="hero-content">
+            <h1>Our <span class="accent-text">Services</span></h1>
+            <p>Comprehensive business advisory and transformation services tailored for South African enterprises</p>
+        </div>
+    </section>
+
+    <section class="services-preview">
+        <div class="container">
+		<div class="section-header">
+        <h2>End-to-End Business Solutions</h2>
+        <p>From strategic planning to operational execution, we provide the expertise your business needs to thrive</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Legal & Governance</h3>
+                    <p>Expert legal counsel, corporate governance, and regulatory compliance to protect your business and ensure adherence to South African law.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Contract Drafting & Review</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>HR Policy Development</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>King IV Implementation</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>POPIA/PAIA Compliance</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>CIPC Management</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Company Secretarial Services</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Financial Services</h3>
+                    <p>Strategic financial management from daily bookkeeping to complex tax planning and debt restructuring solutions.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Accounting & Bookkeeping</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Tax Planning & SARS Compliance</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Financial Reporting Systems</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Debt Restructuring</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Valuations (IFRS compliant)</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Management Accounts</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Strategic Advisory</h3>
+                    <p>Long-term strategic planning, business restructuring, and transformation support to drive sustainable growth.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Strategic Planning</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Business Restructuring & Rescue</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>M&A Advisory</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Business Needs Assessment</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Training & Development</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Business Operations</h3>
+                    <p>Streamline operations, improve efficiency, and establish robust processes and performance management systems.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Process Improvement</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Policy & Procedure Documentation</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Performance Management & KPIs</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Compliance Calendar Management</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Marketing & Digital Strategy</h3>
+                    <p>Build your brand, reach your target market, and ensure digital compliance with strategic marketing solutions.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Brand Development</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Digital Marketing Management</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Marketing Strategy</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Website Compliance Audit</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-server"></i>
+                    <h3>IT & Cybersecurity</h3>
+                    <p>Protect your digital assets and optimize technology infrastructure with comprehensive IT advisory and security solutions.</p>
+                    <ul style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Cybersecurity Risk Assessment</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>IT Infrastructure Advisory</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Data Management & Governance</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <i class="fas fa-check" style="color: var(--accent); font-size: 0.875rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>Business Systems Implementation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+                <!-- How We Work -->
+                <div style="background: var(--bg-alt); padding: 4rem; border-radius: 20px; margin-top: 6rem;">
+                    <div class="section-header">
+                        <h2>How We Work With You</h2>
+                        <p>Flexible engagement models designed around your needs</p>
+                    </div>
+                    <div class="services-grid" style="margin-top: 3rem;">
+                        <div style="text-align: center;">
+                            <div style="width: 80px; height: 80px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <i class="fas fa-compass" style="color: var(--accent); font-size: 2rem;"></i>
+                            </div>
+                            <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Strategy & Advisory</h4>
+                            <p style="color: var(--text-light); line-height: 1.8;">Perfect for businesses seeking expert insight to identify challenges and set strategic direction. Get a comprehensive assessment and actionable roadmap.</p>
+                            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+                                <p style="color: var(--accent); font-weight: 600; font-size: 1.1rem;">One-Time Engagement</p>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">Diagnostic + Strategic Recommendations</p>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 80px; height: 80px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <i class="fas fa-rocket" style="color: var(--accent); font-size: 2rem;"></i>
+                            </div>
+                            <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Strategic Execution</h4>
+                            <p style="color: var(--text-light); line-height: 1.8;">For businesses ready to implement. We don't just advise - we help you execute with policy drafting, system implementation, and hands-on support.</p>
+                            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+                                <p style="color: var(--accent); font-weight: 600; font-size: 1.1rem;">Project-Based</p>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">Advisory + Implementation + Support</p>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 80px; height: 80px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <i class="fas fa-users-cog" style="color: var(--accent); font-size: 2rem;"></i>
+                            </div>
+                            <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Operational Partnership</h4>
+                            <p style="color: var(--text-light); line-height: 1.8;">Ongoing outsourced support across finance, legal, marketing, IT, or compliance. Get a dedicated team managing critical functions so you can focus on growth.</p>
+                            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+                                <p style="color: var(--accent); font-weight: 600; font-size: 1.1rem;">Monthly Retainer</p>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">Execution + Management + Priority Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Expert Guidance?</h2>
+                <p>Let's discuss how our services can address your specific business challenges</p>
+                <a href="#" class="btn btn-primary" onclick="showPage('booking')">
+                    <i class="fas fa-calendar-check"></i> Book Consultation
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="hero" style="height: 60vh;">
+            <div class="hero-content">
+                <h1>Get In <span class="accent-text">Touch</span></h1>
+                <p>Ready to transform your business? Let's discuss your requirements</p>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                    <div>
+                        <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 2rem;">Contact Information</h2>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: start; gap: 1.5rem; margin-bottom: 2rem;">
+                                <div style="width: 60px; height: 60px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-map-marker-alt" style="color: white; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Location</h4>
+                                    <p style="color: var(--text-light); line-height: 1.6;">South Africa</p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: start; gap: 1.5rem; margin-bottom: 2rem;">
+                                <div style="width: 60px; height: 60px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-phone" style="color: white; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Phone & Mobile</h4>
+                                    <p style="color: var(--text-light); line-height: 1.6;">Ashendran: +27-65-895-4832<br>Avathar: +27-82-315-4737</p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: start; gap: 1.5rem; margin-bottom: 2rem;">
+                                <div style="width: 60px; height: 60px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-envelope" style="color: white; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Email</h4>
+                                    <p style="color: var(--text-light); line-height: 1.6;">General: info.apexadvisorysolutions@gmail.com<br>Ashendran: ashendran.apex@gmail.com<br>Avathar: avathar.apex@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: start; gap: 1.5rem;">
+                                <div style="width: 60px; height: 60px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-clock" style="color: white; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Business Hours</h4>
+                                    <p style="color: var(--text-light); line-height: 1.6;">Monday - Friday: 08:00 - 17:00<br>Saturday: 09:00 - 13:00<br>Sunday & Public Holidays: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 style="margin-bottom: 2rem;">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Full Name *</label>
+                                <input type="text" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Email Address *</label>
+                                <input type="email" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Phone Number</label>
+                                <input type="tel" style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Service Required *</label>
+                                <select required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select a service</option>
+                                    <option value="business-restructuring">Business Restructuring</option>
+                                    <option value="corporate-governance">Corporate Governance</option>
+                                    <option value="financial-advisory">Financial Advisory</option>
+                                    <option value="regulatory-compliance">Regulatory Compliance</option>
+                                    <option value="bbbee-transformation">BBBEE & Transformation</option>
+                                    <option value="litigation-support">Commercial Litigation Support</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Message *</label>
+                                <textarea required rows="5" style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 1rem 2rem;">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Booking Page -->
+    <div id="booking" class="page">
+        <section class="hero" style="height: 60vh;">
+            <div class="hero-content">
+                <h1>Book a <span class="accent-text">Consultation</span></h1>
+                <p>Schedule a confidential consultation with our business restructuring experts</p>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                    <div>
+                        <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 2rem;">What to Expect</h2>
+                        
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-weight: 700; font-size: 1.5rem;">1</div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Initial Assessment</h4>
+                                <p style="color: var(--text-light); line-height: 1.6;">We'll discuss your current situation, challenges, and objectives in detail.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-weight: 700; font-size: 1.5rem;">2</div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Strategic Analysis</h4>
+                                <p style="color: var(--text-light); line-height: 1.6;">Our experts will analyze your business and identify key opportunities and risks.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-weight: 700; font-size: 1.5rem;">3</div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Tailored Recommendations</h4>
+                                <p style="color: var(--text-light); line-height: 1.6;">Receive customized solutions and a clear roadmap for your business transformation.</p>
+                            </div>
+                        </div>
+
+                        <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent);">
+                            <p style="color: var(--text); line-height: 1.6; margin: 0;"><strong>Note:</strong> All initial consultations are strictly confidential and subject to professional privilege. No obligation to proceed.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 style="margin-bottom: 2rem;">Schedule Your Consultation</h3>
+                        <form id="bookingForm">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">First Name *</label>
+                                    <input type="text" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                </div>
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Last Name *</label>
+                                    <input type="text" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Email Address *</label>
+                                <input type="email" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Phone Number *</label>
+                                <input type="tel" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Company/Organization *</label>
+                                <input type="text" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Your Position</label>
+                                <input type="text" placeholder="e.g., CEO, CFO, Director" style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Primary Area of Interest *</label>
+                                <select required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select primary interest</option>
+                                    <option value="business-restructuring">Business Restructuring</option>
+                                    <option value="business-rescue">Business Rescue (Chapter 6)</option>
+                                    <option value="corporate-governance">Corporate Governance</option>
+                                    <option value="financial-advisory">Financial Advisory</option>
+                                    <option value="regulatory-compliance">Regulatory Compliance</option>
+                                    <option value="bbbee-transformation">BBBEE & Transformation</option>
+                                    <option value="litigation-support">Commercial Litigation Support</option>
+                                    <option value="general-consultation">General Business Consultation</option>
+                                </select>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Preferred Date *</label>
+                                    <input type="date" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                </div>
+                                <div>
+                                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Preferred Time *</label>
+                                    <select required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                        <option value="">Select time</option>
+                                        <option value="09:00">09:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="14:00">02:00 PM</option>
+                                        <option value="15:00">03:00 PM</option>
+                                        <option value="16:00">04:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Meeting Format *</label>
+                                <select required style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select format</option>
+                                    <option value="in-person">In-Person</option>
+                                    <option value="video-call">Video Conference (Teams/Zoom)</option>
+                                    <option value="phone-call">Phone Call</option>
+                                </select>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Urgency Level</label>
+                                <select style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem;">
+                                    <option value="standard">Standard (within 1-2 weeks)</option>
+                                    <option value="urgent">Urgent (within 3-5 days)</option>
+                                    <option value="critical">Critical/Emergency (within 24 hours)</option>
+                                </select>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary);">Brief Description of Your Requirements *</label>
+                                <textarea required rows="4" placeholder="Please provide a brief overview of your situation, challenges, or requirements..." style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: flex; align-items: start; gap: 0.75rem; cursor: pointer;">
+                                    <input type="checkbox" required style="margin-top: 0.25rem;">
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">I consent to Apex Advisory Solutions contacting me regarding my inquiry and understand that all information will be treated confidentially.</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 1rem 2rem;">
+                                <i class="fas fa-calendar-check"></i> Book Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+                
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+			                    <div class="footer-logo">
+                        <img src="imgs/logo invert.png" alt="Apex Logo" class="footer-logo-image">
+                    </div>
+                <p>Leading business transformation and restructuring consultancy in South Africa.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#" onclick="showPage('services')">Legal & Governance</a>
+                <a href="#" onclick="showPage('services')">Financial Services</a>
+                <a href="#" onclick="showPage('services')">Strategic Advisory</a>
+                <a href="#" onclick="showPage('services')">Business Operations</a>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#" onclick="showPage('about')">About</a>
+                <a href="#" onclick="showPage('services')">Services</a>
+                <a href="#" onclick="showPage('contact')">Contact</a>
+                <a href="#" onclick="showPage('booking')">Book Consultation</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> Avathar: +27-82-315-4737</p>
+				<p><i class="fas fa-phone"></i> Ashendran: +27-65-895-4832</p>
+                <p> info.apexadvisorysolutions@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> South Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Apex Advisory Solutions (Pty) Ltd. All rights reserved. Designed By Alba Designs</p>
+        </div>
+    </footer>
+	<script src="main.js"></script>
+</body>
+</html>
