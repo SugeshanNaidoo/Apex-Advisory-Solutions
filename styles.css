@@ -959,7 +959,7 @@ nav {
 .logo_items img {
 
     /* Responsive larger logos */
-    height: clamp(90px, 10vw, 140px);
+    height: clamp(90px, 10vw, 150px);
     width: auto;
 
     flex-shrink: 0;
