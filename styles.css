@@ -888,27 +888,31 @@ nav {
    PARTNER LOGOS CAROUSEL
    ===================== */
 
-@keyframes slides {
+/*
+ * Carousel: animate the TRACK by -50% so it always loops perfectly
+ * regardless of how many logos are inside each strip.
+ * Both .logo_items strips must contain identical logos.
+ */
+@keyframes carousel-scroll {
     from { transform: translateX(0); }
-    to   { transform: translateX(-100%); }
+    to   { transform: translateX(-50%); }
 }
 
 .logos {
     overflow: hidden;
     padding: 30px 0;
-    white-space: nowrap;
     position: relative;
     width: 100%;
-    /* Ensure the carousel never causes page-level overflow */
     max-width: 100%;
 }
 
+/* Fade edges */
 .logos::before,
 .logos::after {
     position: absolute;
     top: 0;
     content: '';
-    width: 150px;
+    width: 120px;
     height: 100%;
     z-index: 2;
     pointer-events: none;
@@ -916,30 +920,44 @@ nav {
 
 .logos::before {
     left: 0;
-    background: linear-gradient(to left, rgba(255,255,255,0), #ffffff);
+    background: linear-gradient(to right, #ffffff, rgba(255,255,255,0));
 }
 
 .logos::after {
     right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0), #ffffff);
+    background: linear-gradient(to left, #ffffff, rgba(255,255,255,0));
 }
 
-.logo_items {
-    display: inline-flex;
+/*
+ * The track: a single flex row containing BOTH logo_items strips.
+ * Animating the track by -50% scrolls exactly one full strip width
+ * and then snaps back invisibly — works with any number of logos.
+ */
+.logo-track {
+    display: flex;
     align-items: center;
-    animation: 35s slides infinite linear;
+    width: max-content;
+    animation: carousel-scroll 40s linear infinite;
     will-change: transform;
 }
 
-.logos:hover .logo_items {
+.logos:hover .logo-track {
     animation-play-state: paused;
+}
+
+/* Each strip is a flex row of logos */
+.logo_items {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .logo_items img {
     height: 80px;
     width: auto;
     flex-shrink: 0;
-    margin: 0 1.5rem;
+    /* Gap between logos — adjust freely without breaking the loop */
+    margin: 0 2rem;
     object-fit: contain;
 }
 
@@ -1303,12 +1321,12 @@ footer {
     /* Logos carousel */
     .logos::before,
     .logos::after {
-        width: 40px;
+        width: 50px;
     }
 
     .logo_items img {
         height: 55px;
-        margin: 0 0.75rem;
+        margin: 0 1.25rem;
     }
 
     /* Booking steps on mobile */
