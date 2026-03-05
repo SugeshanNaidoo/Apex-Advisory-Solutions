@@ -888,31 +888,32 @@ nav {
    PARTNER LOGOS CAROUSEL
    ===================== */
 
-/*
- * Carousel: animate the TRACK by -50% so it always loops perfectly
- * regardless of how many logos are inside each strip.
- * Both .logo_items strips must contain identical logos.
- */
+/* Smooth GPU-accelerated animation */
 @keyframes carousel-scroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+    from {
+        transform: translate3d(0,0,0);
+    }
+    to {
+        transform: translate3d(-50%,0,0);
+    }
 }
 
+/* Container */
 .logos {
     overflow: hidden;
-    padding: 30px 0;
+    padding: 50px 0;
     position: relative;
     width: 100%;
     max-width: 100%;
 }
 
-/* Fade edges */
+/* Edge fade effect */
 .logos::before,
 .logos::after {
     position: absolute;
     top: 0;
     content: '';
-    width: 120px;
+    width: 140px;
     height: 100%;
     z-index: 2;
     pointer-events: none;
@@ -928,37 +929,62 @@ nav {
     background: linear-gradient(to left, #ffffff, rgba(255,255,255,0));
 }
 
-/*
- * The track: a single flex row containing BOTH logo_items strips.
- * Animating the track by -50% scrolls exactly one full strip width
- * and then snaps back invisibly — works with any number of logos.
- */
+/* Track that moves */
 .logo-track {
     display: flex;
     align-items: center;
     width: max-content;
-    animation: carousel-scroll 40s linear infinite;
+
+    animation: carousel-scroll 55s linear infinite;
+
     will-change: transform;
+    backface-visibility: hidden;
+    transform: translate3d(0,0,0);
 }
 
+/* Pause animation when hovering */
 .logos:hover .logo-track {
     animation-play-state: paused;
 }
 
-/* Each strip is a flex row of logos */
+/* Each duplicated strip of logos */
 .logo_items {
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    gap: 1rem;
 }
 
+/* Logo styling */
 .logo_items img {
-    height: 80px;
+
+    /* Responsive larger logos */
+    height: clamp(90px, 10vw, 140px);
     width: auto;
+
     flex-shrink: 0;
-    /* Gap between logos — adjust freely without breaking the loop */
-    margin: 0 2rem;
+    margin: 0 2.5rem;
+
     object-fit: contain;
+
+    /* Premium look */
+
+    transition:
+        filter 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Hover interaction */
+.logo_items img:hover {
+
+    filter: grayscale(0%) opacity(1);
+
+    transform: scale(1.08);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
 /* =====================
