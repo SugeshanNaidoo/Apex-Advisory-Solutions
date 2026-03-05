@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ================================================ -->
+  <!-- APEX ADVISORY SOLUTIONS — SINGLE PAGE APPLICATION -->
+  <!-- All sections live on index.html; each anchor URL  -->
+  <!-- is listed separately for search engine clarity.   -->
+  <!-- ================================================ -->
+
+  <!-- Homepage / Hero -->
+  <url>
+    <loc>https://apexadvisorysolutions.co.za/</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://apexadvisorysolutions.co.za/imgs/logo.png</image:loc>
+      <image:title>Apex Advisory Solutions - Business Restructuring Experts South Africa</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://apexadvisorysolutions.co.za/#about</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://apexadvisorysolutions.co.za/imgs/avathar.png</image:loc>
+      <image:title>Avathar Soni Naidoo - Co-Founder &amp; Director, Apex Advisory Solutions</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apexadvisorysolutions.co.za/imgs/ashen.png</image:loc>
+      <image:title>Ashendran Naidoo - Co-Founder &amp; Director, Apex Advisory Solutions</image:title>
+    </image:image>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://apexadvisorysolutions.co.za/#services</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://apexadvisorysolutions.co.za/#contact</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Book Consultation Page -->
+  <url>
+    <loc>https://apexadvisorysolutions.co.za/#booking</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+</urlset>

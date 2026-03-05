@@ -1,0 +1,151 @@
+# robots.txt for Apex Advisory Solutions
+# Updated: March 2025
+
+# ==========================================
+# GENERAL RULES FOR ALL BOTS
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Allow main page and static assets
+Allow: /index.html
+Allow: /styles.css
+Allow: /main.js
+
+# Allow image and partner logo directories
+Allow: /imgs/
+Allow: /partners/
+
+# ==========================================
+# SITEMAP LOCATION
+# ==========================================
+
+Sitemap: https://apexadvisorysolutions.co.za/sitemap.xml
+
+# ==========================================
+# BLOCK UNNECESSARY DIRECTORIES
+# ==========================================
+
+# Block serverless API routes from indexing
+Disallow: /api/
+
+# Block deployment and build artifacts
+Disallow: /.vercel/
+Disallow: /node_modules/
+Disallow: /_next/
+
+# Block sensitive/admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /test/
+
+# Block log and temporary files
+Disallow: /*.log$
+Disallow: /*.tmp$
+Disallow: /*.bak$
+
+# Block duplicate/parameterised URLs
+Disallow: /*?
+Disallow: /*&
+Disallow: /search
+
+# ==========================================
+# ALLOW STATIC RESOURCES
+# ==========================================
+
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.webp$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+
+# ==========================================
+# SPECIFIC BOT INSTRUCTIONS
+# ==========================================
+
+# Google — full access, no delay
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Images — allow logos and team photos
+User-agent: Googlebot-Image
+Allow: /imgs/
+Allow: /partners/
+Crawl-delay: 0
+
+# Bing — full access
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ==========================================
+# SOCIAL MEDIA BOTS (Open Graph / Card previews)
+# ==========================================
+
+User-agent: Facebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 0
+
+# ==========================================
+# BAD BOTS (Rate-limit or block)
+# ==========================================
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+# ==========================================
+# NOTES
+# ==========================================
+
+# This robots.txt is configured for:
+# 1. SEO      - Full search engine access to all pages
+# 2. Social   - LinkedIn/Twitter/Facebook preview bots allowed
+# 3. Security - API routes blocked from indexing
+# 4. Performance - Rate limiting for aggressive crawlers
+#
+# Last updated: March 2025
+# Website: https://apexadvisorysolutions.co.za
+# Contact: info.apexadvisorysolutions@gmail.com
