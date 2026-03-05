@@ -2,7 +2,6 @@
   "name": "apex-advisory-solutions",
   "version": "1.0.0",
   "description": "Apex Advisory Solutions - Business Restructuring, Legal, Financial & Strategic Advisory Services in South Africa",
-  "type": "module",
   "main": "index.html",
   "scripts": {
     "dev": "vercel dev"
