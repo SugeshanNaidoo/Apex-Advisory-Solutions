@@ -291,7 +291,7 @@ function showSuccessModal(message) {
             </div>
             <h2 style="color:#0f172a; margin-bottom:0.75rem; font-size:1.6rem;">Success!</h2>
             <p style="color:#64748b; line-height:1.6; margin-bottom:1.75rem;">${message}</p>
-            <button onclick="this.closest('[style]').remove()"
+            <button id="modalCloseBtn"
                     style="background:#f59e0b; color:white; border:none; padding:0.875rem 2rem;
                            border-radius:8px; font-size:1rem; font-weight:600; cursor:pointer;
                            min-width:140px;">
@@ -300,5 +300,6 @@ function showSuccessModal(message) {
         </div>
     `;
     document.body.appendChild(modal);
+    modal.querySelector('#modalCloseBtn').addEventListener('click', () => modal.remove());
     modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
 }
