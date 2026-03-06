@@ -690,9 +690,9 @@
                             <div>
                                 <h4>Email</h4>
                                 <p>
-                                    <!--email_off-->General: <a href="mailto:info.apexadvisorysolutions@gmail.com">info.apexadvisorysolutions@gmail.com</a><!--/email_off--><br>
-                                    <!--email_off-->Ashendran: <a href="mailto:ashendran@apexadvisory.co.za">ashendran@apexadvisory.co.za</a><!--/email_off--><br>
-                                    <!--email_off-->Avathar: <a href="mailto:avathar@apexadvisory.co.za">avathar@apexadvisory.co.za</a><!--/email_off-->
+                                    General: <!--email_off--><a href="mailto:info.apexadvisorysolutions@gmail.com">info.apexadvisorysolutions@gmail.com</a><!--/email_off--><br>
+                                    Ashendran: <!--email_off--><a href="mailto:ashendran@apexadvisory.co.za">ashendran@apexadvisory.co.za</a><!--/email_off--><br>
+                                    Avathar: <!--email_off--><a href="mailto:avathar@apexadvisory.co.za">avathar@apexadvisory.co.za</a><!--/email_off-->
                                 </p>
                             </div>
                         </div>
@@ -718,27 +718,27 @@
                         <form id="contactForm">
                             <div class="form-group">
                                 <label class="form-label" for="c-name">Full Name *</label>
-                                <input id="c-name" type="text" required class="form-input" placeholder="Your full name">
+                                <input id="c-name" name="name" type="text" required class="form-input" placeholder="Your full name">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="c-email">Email Address *</label>
-                                <input id="c-email" type="email" required class="form-input" placeholder="your@email.com">
+                                <input id="c-email" name="email" type="email" required class="form-input" placeholder="your@email.com">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="c-phone">Phone Number</label>
-                                <input id="c-phone" type="tel" class="form-input" placeholder="+27 xx xxx xxxx">
+                                <input id="c-phone" name="phone" type="tel" class="form-input" placeholder="+27 xx xxx xxxx">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="c-company">Company</label>
-                                <input id="c-company" type="text" class="form-input" placeholder="Your company name">
+                                <input id="c-company" name="company" type="text" class="form-input" placeholder="Your company name">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="c-service">Service Required *</label>
-                                <select id="c-service" required class="form-select">
+                                <select id="c-service" name="service" required class="form-select">
                                     <option value="">Select a service</option>
                                     <option value="business-restructuring">Business Restructuring</option>
                                     <option value="corporate-governance">Corporate Governance</option>
@@ -752,7 +752,7 @@
 
                             <div class="form-group">
                                 <label class="form-label" for="c-message">Message *</label>
-                                <textarea id="c-message" required rows="5" class="form-textarea" placeholder="How can we help you?"></textarea>
+                                <textarea id="c-message" name="message" required rows="5" class="form-textarea" placeholder="How can we help you?"></textarea>
                             </div>
 
                             <input type="text" name="website" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;">
@@ -822,37 +822,37 @@
                             <div class="form-row">
                                 <div>
                                     <label class="form-label" for="b-fname">First Name *</label>
-                                    <input id="b-fname" type="text" required class="form-input" placeholder="First name">
+                                    <input id="b-fname" name="firstName" type="text" required class="form-input" placeholder="First name">
                                 </div>
                                 <div>
                                     <label class="form-label" for="b-lname">Last Name *</label>
-                                    <input id="b-lname" type="text" required class="form-input" placeholder="Last name">
+                                    <input id="b-lname" name="lastName" type="text" required class="form-input" placeholder="Last name">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="b-email">Email Address *</label>
-                                <input id="b-email" type="email" required class="form-input" placeholder="your@email.com">
+                                <input id="b-email" name="email" type="email" required class="form-input" placeholder="your@email.com">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="b-phone">Phone Number *</label>
-                                <input id="b-phone" type="tel" required class="form-input" placeholder="+27 xx xxx xxxx">
+                                <input id="b-phone" name="phone" type="tel" required class="form-input" placeholder="+27 xx xxx xxxx">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="b-company">Company/Organization *</label>
-                                <input id="b-company" type="text" required class="form-input" placeholder="Your company name">
+                                <input id="b-company" name="company" type="text" required class="form-input" placeholder="Your company name">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="b-position">Your Position</label>
-                                <input id="b-position" type="text" class="form-input" placeholder="e.g., CEO, CFO, Director">
+                                <input id="b-position" name="position" type="text" class="form-input" placeholder="e.g., CEO, CFO, Director">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="b-service">Primary Area of Interest *</label>
-                                <select id="b-service" required class="form-select">
+                                <select id="b-service" name="service" required class="form-select">
                                     <option value="">Select primary interest</option>
                                     <option value="business-restructuring">Business Restructuring</option>
                                     <option value="business-rescue">Business Rescue (Chapter 6)</option>
@@ -868,11 +868,11 @@
                             <div class="form-row">
                                 <div>
                                     <label class="form-label" for="b-date">Preferred Date *</label>
-                                    <input id="b-date" type="date" required class="form-input">
+                                    <input id="b-date" name="date" type="date" required class="form-input">
                                 </div>
                                 <div>
                                     <label class="form-label" for="b-time">Preferred Time *</label>
-                                    <select id="b-time" required class="form-select">
+                                    <select id="b-time" name="time" required class="form-select">
                                         <option value="">Select time</option>
                                         <option value="09:00">09:00 AM</option>
                                         <option value="10:00">10:00 AM</option>
@@ -886,7 +886,7 @@
 
                             <div class="form-group">
                                 <label class="form-label" for="b-format">Meeting Format *</label>
-                                <select id="b-format" required class="form-select">
+                                <select id="b-format" name="format" required class="form-select">
                                     <option value="">Select format</option>
                                     <option value="in-person">In-Person</option>
                                     <option value="video-call">Video Conference (Teams/Zoom)</option>
@@ -896,7 +896,7 @@
 
                             <div class="form-group">
                                 <label class="form-label" for="b-urgency">Urgency Level</label>
-                                <select id="b-urgency" class="form-select">
+                                <select id="b-urgency" name="urgency" class="form-select">
                                     <option value="standard">Standard (within 1–2 weeks)</option>
                                     <option value="urgent">Urgent (within 3–5 days)</option>
                                     <option value="critical">Critical/Emergency (within 24 hours)</option>
@@ -905,12 +905,12 @@
 
                             <div class="form-group">
                                 <label class="form-label" for="b-details">Brief Description of Your Requirements *</label>
-                                <textarea id="b-details" required rows="4" class="form-textarea" placeholder="Please provide a brief overview of your situation, challenges, or requirements..."></textarea>
+                                <textarea id="b-details" name="details" required rows="4" class="form-textarea" placeholder="Please provide a brief overview of your situation, challenges, or requirements..."></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" required>
+                                    <input type="checkbox" name="consent" required>
                                     <span>I consent to Apex Advisory Solutions contacting me regarding my inquiry and understand that all information will be treated confidentially.</span>
                                 </label>
                             </div>
@@ -959,7 +959,7 @@
                 <h3>Contact</h3>
                 <p><i class="fas fa-phone"></i> Avathar: +27-82-315-4737</p>
                 <p><i class="fas fa-phone"></i> Ashendran: +27-65-895-4832</p>
-                <p><i class="fas fa-envelope"></i> <!--email_off-->info.apexadvisorysolutions@gmail.com<!--/email_off--></p>
+                <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c65626a63226d7c69746d687a657f637e757f636079786563627f4c6b616d6560226f6361">[email&#160;protected]</a></p>
                 <p><i class="fas fa-clock"></i> Mon–Fri: 08:00–17:00</p>
             </div>
         </div>
